@@ -1,19 +1,18 @@
 <template>
 
-  <hello />
+  <postForm />
   
 </template>
 
 <script>
-
-import hello from '~/components/hello.vue'
+import postForm from '~/components/postForm.vue'
 
 export default {
   components: {
-    hello
+    postForm
   }
-
 }
+
 </script>
 
 <style>

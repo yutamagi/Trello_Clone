@@ -1,6 +1,6 @@
 
 export default {
-  mode: 'universal',
+  mode: 'SPA',
   /*
   ** Headers of the page
   */
@@ -28,6 +28,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/firebase',
   ],
   /*
   ** Nuxt.js dev-modules
@@ -38,7 +39,13 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/dotenv',
+    '@nuxtjs/proxy',
+    '@nuxtjs/axios',
   ],
+  axios: {
+    baseURL: 'https://trello-clone-28a94.firebaseio.com'
+  },
   /*
   ** Build configuration
   */
